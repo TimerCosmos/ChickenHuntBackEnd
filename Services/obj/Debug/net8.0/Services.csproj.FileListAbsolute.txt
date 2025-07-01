@@ -1,5 +1,0 @@
-C:\Users\yasas\source\repos\ChickenHunt\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
-C:\Users\yasas\source\repos\ChickenHunt\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\yasas\source\repos\ChickenHunt\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
-C:\Users\yasas\source\repos\ChickenHunt\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
-C:\Users\yasas\source\repos\ChickenHunt\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache

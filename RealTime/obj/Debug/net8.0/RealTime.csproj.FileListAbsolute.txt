@@ -1,5 +1,0 @@
-C:\Users\yasas\source\repos\ChickenHunt\RealTime\obj\Debug\net8.0\RealTime.csproj.AssemblyReference.cache
-C:\Users\yasas\source\repos\ChickenHunt\RealTime\obj\Debug\net8.0\RealTime.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\yasas\source\repos\ChickenHunt\RealTime\obj\Debug\net8.0\RealTime.AssemblyInfoInputs.cache
-C:\Users\yasas\source\repos\ChickenHunt\RealTime\obj\Debug\net8.0\RealTime.AssemblyInfo.cs
-C:\Users\yasas\source\repos\ChickenHunt\RealTime\obj\Debug\net8.0\RealTime.csproj.CoreCompileInputs.cache
