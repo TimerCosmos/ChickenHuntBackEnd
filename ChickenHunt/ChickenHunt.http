@@ -1,0 +1,6 @@
+@ChickenHunt_HostAddress = http://localhost:5042
+
+GET {{ChickenHunt_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

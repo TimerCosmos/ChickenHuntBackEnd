@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0AF7CB0C-B320-4B71-9EF4-00C634F32364}|ChickenHunt\\ChickenHunt.csproj|c:\\users\\yasas\\source\\repos\\chickenhunt\\chickenhunt\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AF7CB0C-B320-4B71-9EF4-00C634F32364}|ChickenHunt\\ChickenHunt.csproj|solutionrelative:chickenhunt\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9B5DBE-F65A-4ACD-9FBE-C1B7C1B6A8D0}|Models\\Models.csproj|c:\\users\\yasas\\source\\repos\\chickenhunt\\models\\roomgamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9B5DBE-F65A-4ACD-9FBE-C1B7C1B6A8D0}|Models\\Models.csproj|solutionrelative:models\\roomgamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9B5DBE-F65A-4ACD-9FBE-C1B7C1B6A8D0}|Models\\Models.csproj|c:\\users\\yasas\\source\\repos\\chickenhunt\\models\\roominfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9B5DBE-F65A-4ACD-9FBE-C1B7C1B6A8D0}|Models\\Models.csproj|solutionrelative:models\\roominfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9B5DBE-F65A-4ACD-9FBE-C1B7C1B6A8D0}|Models\\Models.csproj|c:\\users\\yasas\\source\\repos\\chickenhunt\\models\\chicken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9B5DBE-F65A-4ACD-9FBE-C1B7C1B6A8D0}|Models\\Models.csproj|solutionrelative:models\\chicken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9B5DBE-F65A-4ACD-9FBE-C1B7C1B6A8D0}|Models\\Models.csproj|c:\\users\\yasas\\source\\repos\\chickenhunt\\models\\meatstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9B5DBE-F65A-4ACD-9FBE-C1B7C1B6A8D0}|Models\\Models.csproj|solutionrelative:models\\meatstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED9B5DBE-F65A-4ACD-9FBE-C1B7C1B6A8D0}|Models\\Models.csproj|c:\\users\\yasas\\source\\repos\\chickenhunt\\models\\playerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED9B5DBE-F65A-4ACD-9FBE-C1B7C1B6A8D0}|Models\\Models.csproj|solutionrelative:models\\playerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AF7CB0C-B320-4B71-9EF4-00C634F32364}|ChickenHunt\\ChickenHunt.csproj|c:\\users\\yasas\\source\\repos\\chickenhunt\\chickenhunt\\chickenhunt.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0AF7CB0C-B320-4B71-9EF4-00C634F32364}|ChickenHunt\\ChickenHunt.csproj|solutionrelative:chickenhunt\\chickenhunt.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AF7CB0C-B320-4B71-9EF4-00C634F32364}|ChickenHunt\\ChickenHunt.csproj|c:\\users\\yasas\\source\\repos\\chickenhunt\\chickenhunt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AF7CB0C-B320-4B71-9EF4-00C634F32364}|ChickenHunt\\ChickenHunt.csproj|solutionrelative:chickenhunt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoomInfo.cs",
+              "DocumentMoniker": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\Models\\RoomInfo.cs",
+              "RelativeDocumentMoniker": "Models\\RoomInfo.cs",
+              "ToolTip": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\Models\\RoomInfo.cs",
+              "RelativeToolTip": "Models\\RoomInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T17:24:08.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MeatState.cs",
+              "DocumentMoniker": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\Models\\MeatState.cs",
+              "RelativeDocumentMoniker": "Models\\MeatState.cs",
+              "ToolTip": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\Models\\MeatState.cs",
+              "RelativeToolTip": "Models\\MeatState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T08:35:25.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Chicken.cs",
+              "DocumentMoniker": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\Models\\Chicken.cs",
+              "RelativeDocumentMoniker": "Models\\Chicken.cs",
+              "ToolTip": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\Models\\Chicken.cs",
+              "RelativeToolTip": "Models\\Chicken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T08:35:15.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoomGameState.cs",
+              "DocumentMoniker": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\Models\\RoomGameState.cs",
+              "RelativeDocumentMoniker": "Models\\RoomGameState.cs",
+              "ToolTip": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\Models\\RoomGameState.cs",
+              "RelativeToolTip": "Models\\RoomGameState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T08:01:01.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerInfo.cs",
+              "DocumentMoniker": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\Models\\PlayerInfo.cs",
+              "RelativeDocumentMoniker": "Models\\PlayerInfo.cs",
+              "ToolTip": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\Models\\PlayerInfo.cs",
+              "RelativeToolTip": "Models\\PlayerInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T06:18:06.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameHub.cs",
+              "DocumentMoniker": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\ChickenHunt\\Hubs\\GameHub.cs",
+              "RelativeDocumentMoniker": "ChickenHunt\\Hubs\\GameHub.cs",
+              "ToolTip": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\ChickenHunt\\Hubs\\GameHub.cs*",
+              "RelativeToolTip": "ChickenHunt\\Hubs\\GameHub.cs*",
+              "ViewState": "AgIAAPQAAAAAAAAAAAAIwPIAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:50:37.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\ChickenHunt\\Program.cs",
+              "RelativeDocumentMoniker": "ChickenHunt\\Program.cs",
+              "ToolTip": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\ChickenHunt\\Program.cs",
+              "RelativeToolTip": "ChickenHunt\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T03:57:17.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChickenHunt.csproj",
+              "DocumentMoniker": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\ChickenHunt\\ChickenHunt.csproj",
+              "RelativeDocumentMoniker": "ChickenHunt\\ChickenHunt.csproj",
+              "ToolTip": "C:\\Users\\yasas\\source\\repos\\ChickenHunt\\ChickenHunt\\ChickenHunt.csproj",
+              "RelativeToolTip": "ChickenHunt\\ChickenHunt.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-01T04:08:36.508Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
