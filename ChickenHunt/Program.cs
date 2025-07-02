@@ -12,7 +12,7 @@ internal class Program
                 policy.AllowAnyHeader()
                       .AllowAnyMethod()
                       .AllowCredentials()
-                      .WithOrigins("http://localhost:4200", "https://your-frontend.vercel.app");
+                      .WithOrigins("http://localhost:4200", "https://chicken-hunt.vercel.app/");
             });
         });
 
