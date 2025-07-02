@@ -15,6 +15,7 @@ namespace Models
         public int MeatMissed { get; set; } = 0;
         public int Level { get; set; } = 1;
         public bool GameStarted { get; set; } = false;
+        public bool GameOver { get; set; } = false;
         public double SpawnIntervalMs { get; set; } = 2000;
         public List<Chicken> Chickens { get; set; } = new List<Chicken>();
         public List<MeatState> MeatStates { get; set; } = new List<MeatState>();

@@ -106,7 +106,11 @@ namespace ChickenHunt.Hubs
                     {
                         player.ConnectionId = null;
                         _ = Clients.Group(room.RoomCode).SendAsync("PlayerDisconnected", player.Role);
-
+                        bool allDisconnected = room.Players.All(p => string.IsNullOrEmpty(p.ConnectionId));
+                        if (allDisconnected)
+                        {                            
+                            CleanupRoom(room.RoomCode);
+                        }
                         break;
                     }
                 }
@@ -126,8 +130,14 @@ namespace ChickenHunt.Hubs
             {
                 player.ConnectionId = null;
                 await Clients.Group(roomCode).SendAsync("PlayerExited", player.Role);
+                bool allDisconnected = room.Players.All(p => string.IsNullOrEmpty(p.ConnectionId));
+                if (allDisconnected)
+                {
+                    CleanupRoom(roomCode);
+                }
             }
         }
+
 
         [HubMethodName("GenerateRoomCode")]
         public GenericResponse GenerateRoomCode()
@@ -176,7 +186,7 @@ namespace ChickenHunt.Hubs
             }
             var state = RoomStates[roomCode];
             if (state.GameStarted)
-            {             
+            {
                 return;
             }
             state.GameStarted = true;
@@ -207,13 +217,13 @@ namespace ChickenHunt.Hubs
         {
             if (!RoomStates.ContainsKey(roomCode)) return;
             var state = RoomStates[roomCode];
-            state.ChickensKilled++;
-            state.Score += 1 * state.Level;
             var chicken = state.Chickens.FirstOrDefault(c => c.Id == Id);
             bool levelIncrease = false;
-            if (chicken != null)
+            if (chicken != null && !chicken.Hunted && !chicken.Missed)
             {
                 chicken.Hunted = true;
+                state.ChickensKilled++;
+                state.Score += 1 * state.Level;
                 var meat = new MeatState { MeatId = Id, XPos = chicken.XPos, YPos = chicken.YPos };
                 state.MeatStates.Add(meat);
             }
@@ -230,11 +240,11 @@ namespace ChickenHunt.Hubs
         {
             if (!RoomStates.ContainsKey(roomCode)) return;
             var state = RoomStates[roomCode];
-            state.ChickensMissed++;
             var chicken = state.Chickens.FirstOrDefault(chicken => chicken.Id == id);
-            if (chicken != null)
+            if (chicken != null && !chicken.Hunted && !chicken.Missed)
             {
                 chicken.Missed = true;
+                state.ChickensMissed++;
             }
             if (state.ChickensMissed >= 10)
             {
@@ -247,11 +257,11 @@ namespace ChickenHunt.Hubs
         {
             if (!RoomStates.ContainsKey(roomCode)) return;
             var state = RoomStates[roomCode];
-            state.MeatGathered++;
-            state.Score += 1 * state.Level;
             var meat = state.MeatStates.FirstOrDefault(m => m.MeatId == id);
-            if (meat != null)
+            if (meat != null && !meat.MeatGathered && !meat.MeatMissed)
             {
+                state.Score += 1 * state.Level;
+                state.MeatGathered++;
                 meat.MeatGathered = true;
             }
             await Clients.Group(roomCode).SendAsync("UpdateMeatGathered", state.MeatGathered, id, state.Score);
@@ -261,10 +271,10 @@ namespace ChickenHunt.Hubs
         {
             if (!RoomStates.ContainsKey(roomCode)) return;
             var state = RoomStates[roomCode];
-            state.MeatMissed++;
             var meat = state.MeatStates.FirstOrDefault(m => m.MeatId == id);
-            if (meat != null)
+            if (meat != null && !meat.MeatGathered && !meat.MeatMissed)
             {
+                state.MeatMissed++;
                 meat.MeatMissed = true;
             }
             if (state.MeatMissed >= 10)
@@ -305,7 +315,7 @@ namespace ChickenHunt.Hubs
                 cartMovements.Remove(roomCode);
             }
         }
-       
+
 
     }
 }
