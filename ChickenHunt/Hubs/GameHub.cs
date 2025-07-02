@@ -49,13 +49,14 @@ namespace ChickenHunt.Hubs
                 if (!Rooms.ContainsKey(roomCode))
                     return new() { Status = true, Response = new() { Success = false, Data = "Room Not Found" } };
                 var room = Rooms[roomCode];
+                var roomState = RoomStates[roomCode];
                 var player = room.Players.FirstOrDefault(p => p.Role == role);
                 if (player == null)
                     return new() { Status = true, Response = new() { Success = false, Data = "Player Not Found" } };
                 player.ConnectionId = Context.ConnectionId;
                 await Clients.Group(room.RoomCode).SendAsync("Reconnected",role);
                 await Groups.AddToGroupAsync(Context.ConnectionId, roomCode);
-                return new() { Status = true, Response = new() { Success = true, Data = room } };
+                return new() { Status = true, Response = new() { Success = true, Data = roomState } };
             }
             catch (Exception)
             {
@@ -97,7 +98,7 @@ namespace ChickenHunt.Hubs
                     }
                     
                 }
-                return new() { Status = true, Response = new() { Success = true, Data = new { room = room, role = role } } };
+                return new() { Status = true, Response = new() { Success = true, Data = new { room = room, role = role, roomState = roomState } } };
             }
             catch (Exception)
             {
