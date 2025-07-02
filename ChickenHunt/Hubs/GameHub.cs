@@ -53,6 +53,7 @@ namespace ChickenHunt.Hubs
                 if (player == null)
                     return new() { Status = true, Response = new() { Success = false, Data = "Player Not Found" } };
                 player.ConnectionId = Context.ConnectionId;
+                await Clients.Group(room.RoomCode).SendAsync("Reconnected",role);
                 await Groups.AddToGroupAsync(Context.ConnectionId, roomCode);
                 return new() { Status = true, Response = new() { Success = true, Data = room } };
             }
@@ -68,6 +69,7 @@ namespace ChickenHunt.Hubs
             try
             {
                 var room = Rooms[roomCode];
+                var roomState = RoomStates[roomCode];
                 var role = String.Empty;
                 lock (Rooms)
                 {
@@ -85,7 +87,15 @@ namespace ChickenHunt.Hubs
                 await Groups.AddToGroupAsync(Context.ConnectionId, roomCode);
                 if (room.Players.All(p => p.IsConnected))
                 {
-                    await Clients.Group(roomCode).SendAsync("StartGame", roomCode);
+                    if(roomState.GameStarted)
+                    {
+                        await Clients.Group(roomCode).SendAsync("PlayerReJoined", role);
+                    }
+                    else
+                    {
+                        await Clients.Group(roomCode).SendAsync("StartGame", roomCode);
+                    }
+                    
                 }
                 return new() { Status = true, Response = new() { Success = true, Data = new { room = room, role = role } } };
             }
