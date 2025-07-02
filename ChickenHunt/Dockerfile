@@ -4,8 +4,8 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY . .
-RUN dotnet publish ChickenHunt.csproj -c Release -o /app/publish
+COPY . /src
+RUN dotnet publish ChickenHunt/ChickenHunt.csproj -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
